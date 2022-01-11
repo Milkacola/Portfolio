@@ -1,0 +1,100 @@
+/*munkáim rész*/
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.image:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    height: 0;
+    transition: .5s ease;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    padding: 0px;
+}
+
+.container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.tantargy{
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.image:hover{
+    opacity: 50%;
+    background-color:grey;
+}
+
+/*letöltés gomb*/
+.button {
+    background-color: #dc8620;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.button {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.gomb{
+    text-align: center;
+}

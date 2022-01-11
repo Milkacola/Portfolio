@@ -1,0 +1,332 @@
+@charset "UTF-8";
+main, header, footer, article, nav, div, h2, img, p {
+    box-sizing: border-box;
+}
+
+/*Közös formázások*/
+
+main {
+    max-width: 1000px;
+    display: grid;
+    grid-template-areas: "h h h h"
+                         "n n n n"
+                         "a a a a"
+                         "f f f f";
+    grid-gap: 10px;
+    margin: auto;
+    background-color: black;
+    color: white;
+}
+
+body {
+    margin: 0px;
+    background-image: url('kepek/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Mitr', sans-serif;
+    font-size: 13pt;
+}
+
+header {
+    grid-area: h;
+    text-align: center;
+    font-weight: bold;
+    height: 100px;
+    font-size: 50px;
+    padding-top: 20px;
+}
+
+nav {
+    grid-area: n;
+    text-align: center;
+    background-color: red;
+}
+
+nav a {
+    color: white;
+    padding:5px;
+    text-decoration: none;   
+}
+
+nav a:hover {
+    background-color: black;
+    border-radius: 15px;
+}
+
+nav a.active {
+    background-color: black;
+    border-radius: 15px;  
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0px;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+article {
+    grid-area: a;
+    padding-top: 30px;
+}
+
+footer {
+    grid-area: f;
+    background-color: red;
+    text-align: center;
+    height: 50px;
+    padding-bottom: 10px;
+}
+
+.foot p {
+    padding: 10px;
+    margin: 5px;
+}
+
+/*Föoldal*/
+
+.bal img {
+    float: left;
+    width: 250px;
+    padding: 10px;
+}
+
+.fooldal h2 {
+    text-align: center;
+}
+
+.fooldal p {
+    padding: 10px;
+    padding-top: 40px;
+    margin: 10px;
+    text-align: center;
+}
+
+/*Hobbi oldal*/
+
+.hobbi h2 {
+    text-align: center;
+}
+
+.hobbi p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hobbi ul {
+    margin-left: 20px;
+}
+
+.hobbi li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.hobbi table, th, td {
+    border-collapse: collapse;
+    border: 1px solid #818181;
+    text-align: center;
+}
+
+.hobbi table {
+    max-width: 700px;
+    width: 90%;
+    margin: auto;
+}   
+
+.hobbi td {
+    padding: 5px;
+}
+
+.hobbi th {
+    background-color: white;
+    color: black;
+}
+
+.hobbi h3 {
+    margin-left: 20px;
+}
+
+.hobbi iframe {
+    height: 500px;
+    width: 95%;
+    margin: 10px;
+    margin-left: 22px;
+    border: 2px solid red;
+}
+
+/*Portfólió*/
+
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.image:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: red;
+    overflow: hidden;
+    height: 0;
+    transition: .5s ease;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    padding: 0px;
+}
+
+.container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+    box-shadow: 0 0 2px 1px red;
+}
+
+.container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.tantargy{
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.image:hover{
+    opacity: 50%;
+    background-color:grey;
+}
+
+/*letöltés gomb*/
+.button {
+    background-color: #dc8620;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.button {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.gomb{
+    text-align: center;
+}
+
+/*Kapcsolat*/
+
+legend {
+    border: 2px solid white;
+    padding: 10px;
+}
+
+form {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+fieldset {
+    margin-top: 10px;
+}
+
+#kuldes {
+    width: 200px;
+    margin: auto;
+    font-size: 20px;
+    background-color: red;
+}
+
+h2 {
+    text-align: center;
+}
+
+/*reszponzivitás*/
+
+@media screen and (max-width:600px){
+    main{
+        width: 100%;
+        display: grid;
+        grid-gap: 10px;
+        margin: auto;
+        background-color: black;
+        color: white;
+        grid-template-areas:
+            "h"
+            "n"
+            "a"
+            "d"
+            "f";
+    }
+
+    nav ul li {
+        display:block; 
+    }
+
+    p{
+        font-size: 12px;
+        text-align: justify 
+
+    }
+
+    h1{
+        font-size: 40px
+    }
+
+    h2{
+        font-size: 30px
+    }
+
+    h3{
+        font-size: 20px
+    }
+
+    }
+ 

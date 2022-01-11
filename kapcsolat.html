@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<meta name = "description" content = "Főoldal">
+	<meta name = "author" content = "Kovács Milán">
+	<link rel  = "stylesheet" href = "stilus.css">
+    <link rel="icon" href="kepek/icon.png" type="image/png"/>
+	<title>Kapcsolat | Kovács Milán</title>
+</head>
+<body>
+    <main>
+        <header>Kovács Milán</header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class = "aktualis">Kezdőlap</a></li>
+                <li><a href="hobbi.html">Hobbijaim</a></li>
+                <li><a href="portfolio.html">Portfólió</a></li>
+                <li><a class = "active" href="kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+        <article>
+            <form action="Urlap.php" method="post">
+                <fieldset>
+                    <legend>Adatok:</legend>
+                    <label for="fname">Vezetéknév: </label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Keresztnév: </label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="birthday">Születési dátum: </label>
+                    <input type="date" id="birthday" name="birthday"><br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Mennyire tetszik az oldal?</legend>
+                    <input type="radio" name="ert" value="otos" checked>     
+                    <label>Nagyon tetszik</label><br>
+                    <input type="radio" name="ert" value="negyes">     
+                    <label>Tetszik</label><br>
+                    <input type="radio" name="ert" value="harmas">     
+                    <label>Semleges</label><br>
+                    <input type="radio" name="ert" value="kettes">     
+                    <label>Nem tetszik</label><br>
+                    <input type="radio" name="ert" value="egyes">     
+                    <label>Nagyon nem tetszik</label><br>    
+                </fieldset>
+                <fieldset>
+                    <legend>Megjegyzés: </legend>
+                    <textarea rows="5" cols="80"></textarea>
+                    <br>
+                </fieldset>
+                <h2><input type="submit" value="Küldés" id="kuldes"></h2>
+            </form>
+                
+            </div>
+        </article>
+        <footer>
+            <div class = "foot">
+                <p>© Minden jog fenntartva</p>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
